@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+*, 
+*::before, 
+*::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --main-font-family:'Roboto', sans-serif;   
+    --main-font-size: 1rem;
+}
+
+ul{
+    list-style-type: none;
+}
+
+li{
+    display: inline-block;
+}
+
+/* header{
+    position: absolute;
+} */
+
+
+
+.color-box-1{
+    background-color: blueviolet;
+}
+
+.color-box-2{
+    background-color: rgb(104, 27, 177);
+}
+
+html{
+    font-family: var(--main-font-family);
+    font-size: var(--main-font-size);
+}
+
+.container{
+    padding:4px 0;
+}
+
+.flex-container{
+    display: flex;
+}
+
+.flex-container > div{
+    flex-basis: 50%;
+}
+
+.social-network{
+    text-align: right;
+    padding:0.25rem;
+}
+
+
+
+:is(.behance, .fb, .github, .yt, .instagram), a:link{
+    fill:#a1a3a5;
+    transition: fill 1s;
+    width: 1.875rem;
+    height: 1.875rem;
+}
+
+:is(.behance, .fb, .github, .yt, .instagram):hover{
+    fill:#353535;
+}
+
+
+
+.social-network li{
+    margin:0 0 0 0.063rem;
+}
