@@ -76,6 +76,11 @@ html{
     fill:#353535;
 }
 
+header{
+    width: 100%;
+    position: absolute;
+    z-index: 3000;
+}
 
 
 .social-network li{
@@ -96,6 +101,7 @@ html{
     margin: 0 2.125rem 0 0;
     flex-grow: 6;
 }
+
 
 
 @media only screen and (max-width: 23.4375rem) {
