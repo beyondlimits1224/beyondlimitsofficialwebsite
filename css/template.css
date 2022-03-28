@@ -60,7 +60,7 @@ html{
 
 .social-network{
     text-align: right;
-    padding:0.25rem;
+    padding:1rem 2.125rem;
 }
 
 
@@ -83,7 +83,8 @@ html{
 }
 
 .brandlogo{
-    flex-grow: 1;
+    flex-grow: 6;
+    margin: 0 0 0 2.125rem;
 }
 
 .logo{
@@ -92,7 +93,8 @@ html{
 
 .navmenu{
     text-align: right;
-    flex-grow: 11;
+    margin: 0 2.125rem 0 0;
+    flex-grow: 6;
 }
 
 
