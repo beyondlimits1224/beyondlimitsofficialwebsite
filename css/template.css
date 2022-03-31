@@ -101,16 +101,18 @@ header{
     text-align: right;
     margin: 0 2.125rem 0 0;
     flex-grow: 6;
+    color: #fff;
 }
 
 #hero{
-    width: 100%;
-    background-image: url("/img/hero/lebron-james.jpg");
-    background-size: cover, contain;
-    background-position: center;
-    background-repeat: no-repeat;
+    background-image: radial-gradient(circle, #333333, #000000, #000000);
     height: 100vh;
+    background-size: cover;
 
+}
+
+#hero img{
+    width:100%;
 }
 
 
