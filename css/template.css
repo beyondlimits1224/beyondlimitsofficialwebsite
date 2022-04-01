@@ -105,14 +105,14 @@ header{
 }
 
 #hero{
-    background-image: radial-gradient(circle, #333333, #000000, #000000);
-    height: 100vh;
+    background-image: url(/img/hero/lebron-james.jpg);
     background-size: cover;
-
+    background-repeat: no-repeat;
+    height: 768px;
 }
 
 #hero img{
-    width:100%;
+    width: 100%;
 }
 
 
