@@ -104,8 +104,110 @@ nav {
   fill: #494949;
 }
 
+.burger-wrapper {
+  display: none;
+}
+
+.mobile-menu {
+  display: none;
+}
+
 @media screen and (max-width: 64rem) {
   .social-media {
     display: none;
+  }
+
+  nav {
+    display: none;
+  }
+
+  .burger-wrapper {
+    flex: 3;
+    display: block;
+  }
+
+  .burger {
+    display: flex;
+    flex-direction: column;
+    float: inline-end;
+    cursor: pointer;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .burger div {
+    background-color: #fff;
+    margin: 0.2rem;
+  }
+
+  .line1,
+  .line3 {
+    width: 1.563rem;
+    height: 0.125rem;
+  }
+  .line2 {
+    width: 0.9rem;
+    height: 0.125rem;
+  }
+
+  .mobile-menu {
+    display: block;
+    position: absolute;
+    background-color: rgb(255, 255, 255);
+    color: #817f7f;
+    width: 100%;
+    z-index: 1;
+    transform: translateX(100%);
+    transition: transform 0.5s ease-in;
+  }
+
+  .mobile-menu-active {
+    transform: translateX(0%);
+  }
+
+  .close-wrapper {
+    width: 100%;
+    display: block;
+    overflow: hidden;
+  }
+
+  .close {
+    margin: 50px auto;
+    width: 3px;
+    display: block;
+    cursor: pointer;
+  }
+  .close:after {
+    content: "";
+    height: 25px;
+    border-left: 2px solid rgb(192, 192, 192);
+    position: absolute;
+    transform: rotate(45deg);
+  }
+
+  .close:before {
+    content: "";
+    height: 25px;
+    border-left: 2px solid rgb(192, 192, 192);
+    position: absolute;
+    transform: rotate(-45deg);
+  }
+
+  .mobile-menu-social {
+    width: 100%;
+    display: block;
+  }
+
+  .mobile-menu-social .social-items {
+    width: 50%;
+    margin: 50px auto 0 auto;
+  }
+
+  .mobile-menu-items {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
   }
 }
