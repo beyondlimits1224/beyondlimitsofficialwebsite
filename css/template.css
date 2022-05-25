@@ -205,6 +205,30 @@ nav {
   }
 
   .mobile-menu-items li:not(:last-child) {
-    margin: 0 0 40px 0;
+    margin: 0 0 2.5rem 0;
+  }
+
+  .search {
+    width: 80%;
+    margin: 1.563rem auto;
+    position: relative;
+  }
+  .search input[type="text"] {
+    padding: 6px;
+    border: 1px solid #ccc;
+    border-radius: 0.625rem;
+    width: 100%;
+    background-color: #e9e1e1;
+    font-family: var(--main-font-family);
+  }
+
+  .search .icon {
+    position: absolute;
+    width: 15.667px;
+    height: 15.834px;
+    fill: #8f8787;
+    right: 7px;
+    top: 5px;
+    cursor: pointer;
   }
 }
