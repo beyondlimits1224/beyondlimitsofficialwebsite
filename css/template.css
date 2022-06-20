@@ -144,9 +144,14 @@ nav .flex-container {
   height: 50vh;
 }
 
-nav .flex-container li {
+nav li {
   color: var(--color-three);
   font-size: 1.17rem;
+  opacity: 0;
+}
+
+nav a {
+  color: var(--color-three);
 }
 
 main {
@@ -266,4 +271,15 @@ footer .flex-container {
 
 .copyright span {
   font-weight: bolder;
+}
+
+@keyframes navLinkFade {
+  from {
+    opacity: 0;
+    transform: translateX(100%);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0%);
+  }
 }
