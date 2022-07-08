@@ -245,7 +245,16 @@ button:hover {
 }
 
 .cat .column {
-  flex: 50%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.cat .column li::after {
+  content: " | ";
+}
+
+.cat .column li {
+  margin: 0 4px 0 4px;
 }
 
 .cat a {
@@ -255,6 +264,10 @@ button:hover {
 
 .cat a:hover {
   color: #fff;
+}
+
+.works {
+  margin: 54px 0 0 0;
 }
 
 .works img {
@@ -273,6 +286,14 @@ button:hover {
 footer {
   background-color: #000000;
   overflow: hidden;
+  height: 300px;
+  margin: 54px 0 0 0;
+}
+
+footer > a {
+  display: block;
+  width: 100px;
+  margin: auto;
 }
 
 footer li:not(:last-child) {
@@ -282,7 +303,7 @@ footer li:not(:last-child) {
 footer img {
   width: 4.313rem;
   display: block;
-  margin: 1.25rem auto 0 auto;
+  margin: 3rem auto 0 auto;
 }
 
 footer .flex-container {
@@ -298,6 +319,10 @@ footer .flex-container {
 
 .copyright span {
   font-weight: bolder;
+}
+
+.copyright a {
+  color: var(--primary-color);
 }
 
 @keyframes navLinkFade {
@@ -328,6 +353,10 @@ footer .flex-container {
 
   .cat {
     font-size: 1.2rem;
+  }
+
+  h2 {
+    font-size: 2rem;
   }
 
   .burger {
@@ -381,5 +410,9 @@ footer .flex-container {
 @media only screen and (min-width: 119.938rem) {
   .works img {
     width: 22.9rem;
+  }
+  .logo {
+    width: 100px;
+    cursor: pointer;
   }
 }
