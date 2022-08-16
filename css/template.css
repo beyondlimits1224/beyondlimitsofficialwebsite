@@ -15,6 +15,7 @@
   --color-two: #d26a25;
   --color-three: #a1a3a5;
   --link-color: #544d4d;
+  --bg-primary-color: #1c1a1a;
 }
 
 html {
@@ -33,13 +34,13 @@ body {
 .flex-container {
   display: flex;
   padding: 0 8.75rem;
-  border: 0.5px solid red;
+  /* border: 0.5px solid red; */
 }
 
 .container {
   display: block;
   padding: 0 140px;
-  border: 0.5px solid yellow;
+  /* border: 0.5px solid yellow; */
 }
 
 /* text-transform */
@@ -182,7 +183,7 @@ main {
   position: relative;
   margin: auto;
   height: 100%;
-  background-color: #1c1a1a;
+  background-color: var(--bg-primary-color);
 }
 
 .hero {
@@ -224,7 +225,7 @@ main {
 }
 
 .categories {
-  background-color: #1c1a1a;
+  background-color: var(--bg-primary-color);
   margin: -0.313rem 0 0 0;
 }
 
@@ -249,6 +250,24 @@ main {
   content: "|";
   margin: 0 5px;
   color: var(--link-color);
+}
+
+.portfolios {
+  padding: 25px 0;
+  background-color: var(--bg-primary-color);
+}
+
+.portfolios .flex-container {
+  flex-wrap: wrap;
+}
+
+.portfolios .items {
+  flex-basis: 400px;
+  padding: 5px;
+}
+
+.portfolios .items img {
+  width: 100%;
 }
 
 /* MEDIA QUERIES */
