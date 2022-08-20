@@ -182,7 +182,7 @@ main {
   width: min(1920px, 100%);
   position: relative;
   margin: auto;
-  height: 100%;
+  /* height: 100%; */
   background-color: var(--bg-primary-color);
 }
 
@@ -239,6 +239,11 @@ main {
 
 .categories a {
   color: var(--link-color);
+  transition: color 0.5s ease-in;
+}
+
+.categories a:hover {
+  color: #fff;
 }
 
 .categories .active {
@@ -270,6 +275,23 @@ main {
   width: 100%;
 }
 
+footer {
+  width: min(1920px, 100%);
+  background-color: #000000;
+  margin: auto;
+  color: var(--primary-color);
+}
+
+footer .flex-container {
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+footer .socmed .flex-container {
+  flex-direction: row;
+}
+
 /* MEDIA QUERIES */
 
 /* Extra large devices (large laptops and desktops, 1920px and up) */
@@ -289,6 +311,10 @@ main {
   h2 {
     font-size: 25px;
   }
+
+  .portfolios .items {
+    flex-basis: 354px;
+  }
 }
 
 /* 1080 */
@@ -306,6 +332,10 @@ main {
 
   h2 {
     font-size: 20px;
+  }
+
+  .portfolios .items {
+    flex-basis: 265px;
   }
 }
 
@@ -367,6 +397,17 @@ main {
 
   .right-column img {
     width: 80%;
+  }
+
+  .portfolios .items {
+    flex-basis: 165px;
+  }
+}
+
+/* 320 */
+@media only screen and (max-width: 20rem) {
+  .portfolios .items {
+    flex-basis: 141px;
   }
 }
 
