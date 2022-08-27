@@ -288,8 +288,33 @@ footer .flex-container {
   align-items: center;
 }
 
+footer .logo {
+  margin: 2rem 0 0 0;
+}
+
+footer .socmed {
+  margin: 2.25rem 0 1.5em 0;
+}
+
 footer .socmed .flex-container {
   flex-direction: row;
+}
+
+footer .copyrights {
+  margin: 0 0 3rem 0;
+}
+
+footer .copyrights p {
+  text-align: center;
+}
+
+footer .copyrights p span {
+  font-weight: bold;
+}
+
+footer span a {
+  text-decoration: none;
+  color: var(--primary-color);
 }
 
 /* MEDIA QUERIES */
