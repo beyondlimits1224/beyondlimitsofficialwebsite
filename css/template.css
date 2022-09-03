@@ -313,7 +313,7 @@ main {
 }
 
 .portfolios .items {
-  flex-basis: 400px;
+  flex-basis: 25%;
   padding: 5px;
 }
 
@@ -394,10 +394,6 @@ footer span a {
   h2 {
     font-size: 25px;
   }
-
-  .portfolios .items {
-    flex-basis: 354px;
-  }
 }
 
 /* 1080 */
@@ -415,10 +411,6 @@ footer span a {
 
   h2 {
     font-size: 20px;
-  }
-
-  .portfolios .items {
-    flex-basis: 265px;
   }
 }
 
@@ -483,14 +475,7 @@ footer span a {
   }
 
   .portfolios .items {
-    flex-basis: 165px;
-  }
-}
-
-/* 320 */
-@media only screen and (max-width: 20rem) {
-  .portfolios .items {
-    flex-basis: 141px;
+    flex-basis: 100%;
   }
 }
 
