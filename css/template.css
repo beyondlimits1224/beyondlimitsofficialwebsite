@@ -70,6 +70,11 @@ a {
   text-decoration: none;
 }
 
+.active {
+  font-weight: 600;
+  color: var(--primary-color);
+}
+
 .btn {
   display: flex;
   background-color: rgb(255, 0, 0);
@@ -247,6 +252,42 @@ main {
 
 .hero .curve {
   display: block;
+}
+
+.mySlide {
+  display: none;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active-dot,
+.dot:hover {
+  background-color: #ff0000;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
 :is(.right-column, .left-column) {
@@ -476,6 +517,10 @@ footer span a {
 
   .portfolios .items {
     flex-basis: 100%;
+  }
+
+  .btn {
+    width: 100%;
   }
 }
 
