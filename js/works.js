@@ -5,13 +5,16 @@
 
 const All = () => {
   let menu = document.querySelectorAll(".categories ul li a");
-  let navclick = document.querySelector(".categories ul li");
-  navclick.addEventListener("click", () => {
-    for (let i = 0; i < menu.length; i++) {
-      menu[i].classList.add("active");
-      console.log("click");
-    }
-  });
+  let navclick = document.querySelector(".categories ul li a");
+  
+  for(let i = 0; i < menu.length; i++){
+    navclick.addEventListener("click", myFunction())
+  }
+  
+ function myFunction(){
+  console.log("Hi");
+ }   
+    
+    
 };
-
 All();
