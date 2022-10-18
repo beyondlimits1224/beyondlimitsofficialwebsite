@@ -26,7 +26,7 @@ html {
 }
 
 body {
-  background-color:#ffffff; 
+  background-color: #ffffff;
   width: 100%;
   height: 100%;
 }
@@ -322,14 +322,12 @@ main {
 
 .categories li {
   text-transform: uppercase;
-}
-
-.categories a {
   color: var(--link-color);
   transition: color 0.5s ease-in;
+  cursor: pointer;
 }
 
-.categories a:hover {
+.categories li:hover {
   color: #fff;
 }
 
