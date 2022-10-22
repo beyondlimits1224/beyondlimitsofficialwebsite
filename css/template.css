@@ -177,8 +177,8 @@ header {
 
 .socmed .flex-container {
   align-items: center;
-  justify-content: right;
   padding: 0;
+  justify-content: right;
 }
 
 .socmed li:not(:last-child) {
