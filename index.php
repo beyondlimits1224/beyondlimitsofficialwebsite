@@ -15,6 +15,7 @@
 		<meta name="keywords" content="portfolios, web development, graphic designing, vfx, 3D modeling, motion graphics, illustration"/>
 		<meta name="author" content="BeyondLimits" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" rel="stylesheet">
 		<link rel="stylesheet" href="css/template.css" />
 		<title>BeyondLimits</title>
 		<!--[if lt IE 9]>  
@@ -25,11 +26,11 @@
 		<header class="maxWidth ma">
 			<section class="socmed ma mt-2 align-right">
 				<ul class="flex-container">
-					<li><a href="#">behance</a></li>
-					<li><a href="#">facebook</a></li>
-					<li><a href="#">github</a></li>
-					<li><a href="#">youtube</a></li>
-					<li><a href="#">instagram</a></li>
+					<li><a href="#"><i class="fa-brands fa-square-behance fa-2xl"></i></a></li>
+					<li><a href="#"><i class="fa-brands fa-facebook fa-2xl"></i></a></li>
+					<li><a href="#"><i class="fa-brands fa-github fa-2xl"></i></a></li>
+					<li><a href="#"><i class="fa-brands fa-youtube fa-2xl"></i></a></li>
+					<li><a href="#"><i class="fa-brands fa-instagram fa-2xl"></i></a></li>
 				</ul>
 			</section>
 		</header>

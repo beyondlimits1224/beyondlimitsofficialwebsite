@@ -66,8 +66,18 @@ header {
 .socmed {
   display: block;
   width: fit-content;
-  background-color: red;
+  /* background-color: red; */
   padding: 1rem;
+}
+
+
+.socmed i{
+  color:#544d4d;
+  transition: color 0.5s ease-in;
+}
+
+.socmed i:hover{
+  color:#a1a3a5;
 }
 
 .socmed ul li:not(:last-child) {
