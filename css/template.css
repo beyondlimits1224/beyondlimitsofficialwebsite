@@ -16,6 +16,11 @@
   --primary-max-width: min(1920px, 100%);
 }
 
+
+a{
+  text-decoration: none;
+}
+
 ul {
   list-style-type: none;
 }

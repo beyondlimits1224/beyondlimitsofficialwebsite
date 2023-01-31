@@ -25,11 +25,11 @@
 		<header class="maxWidth ma">
 			<section class="socmed ma mt-2 align-right">
 				<ul class="flex-container">
-					<li>behance</li>
-					<li>facebook</li>
-					<li>github</li>
-					<li>youtube</li>
-					<li>instagram</li>
+					<li><a href="#">behance</a></li>
+					<li><a href="#">facebook</a></li>
+					<li><a href="#">github</a></li>
+					<li><a href="#">youtube</a></li>
+					<li><a href="#">instagram</a></li>
 				</ul>
 			</section>
 		</header>
