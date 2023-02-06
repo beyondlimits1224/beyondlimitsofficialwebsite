@@ -10,10 +10,12 @@
 
 :root {
   --primary-font-family: "Roboto", sans-serif;
-  --primary-bg-color: #000;
   --primary-font-size: 16px;
-  --primary-font-color: #000;
   --primary-max-width: min(1920px, 100%);
+  --primary-color: #ff3b00;
+  --secondary-color: #000000;
+  --tertiary-color: #ffffff;
+  --quaternary-color: #959595;
 }
 
 
@@ -29,7 +31,7 @@ ul {
   display: flex;
 }
 
-.maxWidth {
+.container{
   width: var(--primary-max-width);
 }
 
@@ -48,7 +50,7 @@ ul {
 html {
   font-family: var(--primary-font-family);
   font-size: var(--primary-font-size);
-  color: var(--primary-font-color);
+  color: var(--secondary-color);
 }
 
 body {
@@ -58,8 +60,8 @@ body {
 
 header {
   position: relative;
-  background-color: var(--primary-bg-color);
-  color: #fff;
+  background-color: var(--secondary-color);
+  color:var(--tertiary-color); 
   overflow: hidden;
 }
 
@@ -70,16 +72,27 @@ header {
   padding: 1rem;
 }
 
+.socmed li{
+  border: 0;
+  width: 40px;
+  height: 40px;
+  border-radius: 100%;
+  padding: 4px;
+  text-align: center;
+  background-color: #544d4d;
+}
 
 .socmed i{
-  color:#544d4d;
+  color:var(--quaternary-color);
   transition: color 0.5s ease-in;
+  display: block;
+  margin: 15px 0 0 0; 
 }
 
 .socmed i:hover{
-  color:#a1a3a5;
+  color:var(--tertiary-color);
 }
 
 .socmed ul li:not(:last-child) {
-  margin: 0 1rem 0 0;
+  margin: 0 0.5rem 0 0;
 }
