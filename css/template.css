@@ -31,6 +31,14 @@ ul {
   display: flex;
 }
 
+.flx-basis-80p{
+  flex-basis: 80%;
+}
+
+.flx-basis-20p{
+  flex-basis:20%;
+}
+
 .container{
   width: var(--primary-max-width);
 }
@@ -39,13 +47,30 @@ ul {
   margin: auto;
 }
 
-.mt-2 {
+.mt-2{
   margin-top: 2rem;
 }
 
-.align-right {
-  margin-right: 0;
+.mr-0{
+  margin-right:0;
 }
+
+.p-1{
+  padding:1rem;
+}
+
+.debug-red{
+  background-color: red;
+}
+
+.debug-blue{
+  background-color: blue;
+}
+
+.debug-yellow{
+  background-color: yellow;
+}
+
 
 html {
   font-family: var(--primary-font-family);
@@ -69,7 +94,6 @@ header {
   display: block;
   width: fit-content;
   /* background-color: red; */
-  padding: 1rem;
 }
 
 .socmed li{
@@ -95,4 +119,16 @@ header {
 
 .socmed ul li:not(:last-child) {
   margin: 0 0.5rem 0 0;
+}
+
+.logo img{
+  width: 80px;
+}
+
+
+@media only screen and (max-width: 1000px) {
+  .socmed-align-center{
+    margin: 2rem auto 0 auto;
+  }
+
 }

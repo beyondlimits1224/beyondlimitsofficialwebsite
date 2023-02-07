@@ -6,11 +6,10 @@
 				die("Connection failed: " . $conn->connect_error);
 			}
 		?>
-		<header class="ma">
-			<div class="container">
-				<section class="socmed ma mt-2 align-right">
+		<header>
+			<div class="container ma">
+				<section class="socmed ma mt-2 mr-0 p-1 socmed-align-center">
 					<ul class="flex-container">
-					
 						<?php
 							$sql = "SELECT * FROM socmed";
 							$result = mysqli_query($conn, $sql);
@@ -20,7 +19,7 @@
 
 							if(mysqli_num_rows($result) > 0){
 								while($row = mysqli_fetch_assoc($result)){
-									echo "<li>" . "<a href='#'>" . $row["icons"] . "</a>" . "</li>";
+									echo "<li>" . "<a href=" . $row["links"] . ">" . $row["icons"] . "</a>" . "</li>";
 								}
 							}
 							else{
@@ -30,6 +29,14 @@
 						?>
 					</ul>
 				</section>
+			</div>
+			<div class="container ma p-1 debug-red">
+				<div class="flex-container">
+					<div class="logo debug-blue flx-basis-20p"><img src="img/beyondlimits-logo.png" alt="Beyondlimits logo"></div>
+					<nav class="debug-yellow flx-basis-80p">
+						this is the menu
+					</nav>
+				</div>
 			</div>
 		</header>
 		<main>
