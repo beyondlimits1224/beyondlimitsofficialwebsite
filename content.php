@@ -30,11 +30,13 @@
 					</ul>
 				</section>
 			</div>
-			<div class="container ma p-1 debug-red">
+			<div class="container ma p-1">
 				<div class="flex-container">
-					<div class="logo debug-blue flx-basis-20p"><img src="img/beyondlimits-logo.png" alt="Beyondlimits logo"></div>
-					<nav class="debug-yellow flx-basis-80p">
-						this is the menu
+					<div class="logo flx-basis-20p"><img src="img/beyondlimits-logo.png" alt="Beyondlimits logo"></div>
+					<nav class="top-menu flx-basis-80p text-align-right">
+						<ul class="flex-container menu-list align-items-center justify-content-right">
+							<li><a href="#">Home</a></li>
+						</ul>
 					</nav>
 				</div>
 			</div>

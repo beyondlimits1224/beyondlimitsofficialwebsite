@@ -59,6 +59,19 @@ ul {
   padding:1rem;
 }
 
+.text-align-right{
+  text-align: right;
+}
+
+.justify-content-right{
+  justify-content: right;
+}
+
+.align-items-center{
+  align-items: center;
+}
+
+
 .debug-red{
   background-color: red;
 }
@@ -70,6 +83,7 @@ ul {
 .debug-yellow{
   background-color: yellow;
 }
+
 
 
 html {
@@ -123,6 +137,40 @@ header {
 
 .logo img{
   width: 80px;
+}
+
+.top-menu{
+  text-transform: uppercase;
+}
+
+.o-hidden{
+  overflow: hidden;
+}
+
+.top-menu a{
+  color: var(--quaternary-color);
+  transition: color 0.5s ease-in;
+  -webkit-transition: color 0.5s ease-in;
+  -moz-transition:  color 0.5s ease-in;
+  -o-transition: color 0.5s ease-in;
+  -ms-transition: color 0.5s ease-in;
+}
+
+.top-menu a:hover{
+  color: var(--tertiary-color);
+}
+
+.top-menu .active{
+  color: var(--tertiary-color);
+  font-weight: 900;
+}
+
+.menu-list{
+  height: 100%;
+}
+
+.menu-list li:not(:last-child){
+  margin: 0 8px 0 0;
 }
 
 
