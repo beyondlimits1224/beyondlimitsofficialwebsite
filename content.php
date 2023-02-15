@@ -32,10 +32,25 @@
 			</div>
 			<div class="container ma p-1">
 				<div class="flex-container">
-					<div class="logo flx-basis-20p"><img src="img/beyondlimits-logo.png" alt="Beyondlimits logo"></div>
+					<div class="logo flx-basis-20p"><a href="#"><img src="img/beyondlimits-logo.png" alt="Beyondlimits logo"></a></div>
 					<nav class="top-menu flx-basis-80p text-align-right">
 						<ul class="flex-container menu-list align-items-center justify-content-right">
-							<li><a href="#">Home</a></li>
+							<?php
+								$sql = "SELECT * FROM menus";
+								$result = mysqli_query($conn, $sql);
+								if(!$result){
+									die("Database query failed: " . mysqli_error());
+								}
+
+								if(mysqli_num_rows($result) > 0){
+									while($row = $result->fetch_assoc()){
+										echo "<li>" . "<a href=" . "#" . ">" . $row["menu"] . "</a>" . "</li>";
+									}
+								}
+								else{
+									echo "0 results";
+								}
+							?>
 						</ul>
 					</nav>
 				</div>
