@@ -32,7 +32,15 @@
 			</div>
 			<div class="container ma p-1">
 				<div class="flex-container">
-					<div class="logo flx-basis-20p"><a href="#"><img src="img/beyondlimits-logo.png" alt="Beyondlimits logo"></a></div>
+					<?php 
+						$logo = "img/beyondlimits-logo.png";
+						$link = "index.php";
+					?>
+					<div class="logo flx-basis-20p">
+						<a href=<?php echo '"' . $link . '"' ?>>
+							<img src=<?php echo '"' . $logo . '"'?> alt="Beyondlimits logo">
+						</a>
+					</div>
 					<nav class="top-menu flx-basis-80p text-align-right">
 						<ul class="flex-container menu-list align-items-center justify-content-right">
 							<?php
