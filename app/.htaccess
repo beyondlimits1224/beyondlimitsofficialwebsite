@@ -1,0 +1,2 @@
+# This htaccess is to hide and denied accessing this file
+Options -Indexes
