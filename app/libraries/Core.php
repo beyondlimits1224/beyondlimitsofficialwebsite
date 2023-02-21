@@ -6,36 +6,36 @@
      */
 
      class Core{
-        protected $currentController = 'Pages';
-        protected $currentMethod = 'index';
-        protected $params = [];
+            protected $currentController = 'Pages';
+            protected $currentMethod = 'index';
+            protected $params = [];
 
-        public function __construct(){
-           // print_r($this->getUrl());
-           $url = $this->getUrl();
+            public function __construct(){
+                // print_r($this->getUrl());
+                $url = $this->getUrl();
 
-           // Look in controllers for first value
-           if(file_exists('../app/controllers/' . ucwords($url[0]). '.php')){
-                // If exists, set a controller
-                $this->currentController = ucwords($url[0]);
-                // Unset 0 Index
-                unset($url[0]);
-           }
-
-           // Require the controller
-           require_once '../app/controllers/' . $this->currentController . '.php';
-
-           // Instatiate controller class
-           $this->currentController = new $this->currentController;
-
-           // Check for second part of url
-           if(isset($url[1])){
-                // Check to see if method exists in controller
-                if(method_exists($this->currentController, $url[1])){
-                    $this->currentMethod = $url[1];
-                    // Unset 1 index
-                    unset($url[1]);
+                // Look in controllers for first value
+                if(!empty($url[0]) && file_exists('../app/controllers/' . ucwords($url[0]). '.php')){
+                    // If exists, set a controller
+                    $this->currentController = ucwords($url[0]);
+                    // Unset 0 Index
+                    unset($url[0]);
                 }
+
+                // Require the controller
+                require_once '../app/controllers/' . $this->currentController . '.php';
+
+                // Instatiate controller class
+                $this->currentController = new $this->currentController;
+
+                // Check for second part of url
+                if(isset($url[1])){
+                    // Check to see if method exists in controller
+                    if(method_exists($this->currentController, $url[1])){
+                        $this->currentMethod = $url[1];
+                        // Unset 1 index
+                        unset($url[1]);
+                     }
                 
            }
 
