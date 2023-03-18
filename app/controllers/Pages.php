@@ -1,17 +1,22 @@
 <?php
-    class Pages extends Controller {
+   /**
+    * @property Pages $socmedModel
+    * @method Pages getSocmed
+    */
+   
+   class Pages extends Controller {
         public function __construct(){
-            $this->postModel = $this->model('Post');
-
+            
+            $this->socmedModel = $this->model('Socmed');
         }
 
         public function index(){
 
-            $posts = $this->postModel->getPosts();
+            $posts = $this->socmedModel->getSocmed();
 
             $data = [
                 'title' => 'Welcome',
-                'posts' => $posts
+                'posts' => $posts // store $posts
             ];
 
             $this->view('pages/index', $data );

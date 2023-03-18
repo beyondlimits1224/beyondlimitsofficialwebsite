@@ -5,6 +5,8 @@
      */
     class Controller{
 
+        
+
         // Load model
         public function model($model){
             // require model file

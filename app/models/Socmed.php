@@ -1,12 +1,12 @@
 <?php
-    class Post{
+    class Socmed{
         private $db;
 
         public function __construct(){
             $this->db = new Database;
         }
 
-        public function getPosts(){
+        public function getSocmed(){
             $this->db->query("SELECT * FROM socmed");
 
             return $this->db->resultSet();
