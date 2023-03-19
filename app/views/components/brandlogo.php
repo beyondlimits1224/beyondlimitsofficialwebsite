@@ -1,0 +1,1 @@
+<img src="<?php echo URLROOT;?>/img/beyondlimits-logo.png"/>
