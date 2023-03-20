@@ -1,1 +1,6 @@
-This is the topmenu!
+<nav>
+    <ul>
+        <li>Home</li>
+        <li>About</li>
+    </ul>
+</nav>
