@@ -1,1 +1,1 @@
-<img src="<?php echo URLROOT;?>/img/beyondlimits-logo.png"/>
+<img class="logo" src="<?php echo URLROOT;?>/img/beyondlimits-logo.png"/>
