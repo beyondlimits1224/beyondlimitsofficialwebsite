@@ -13,7 +13,9 @@
 </head>
 <body>
    <header>
-        <?php require APPROOT . '/views/components/brandlogo.php'; ?>
-        <?php require APPROOT . '/views/components/socialmedia.php'; ?>
+        <div class="flex-container">
+            <?php require APPROOT . '/views/components/brandlogo.php'; ?>
+            <?php require APPROOT . '/views/components/socialmedia.php'; ?>
+        </div>
         <?php require APPROOT . '/views/components/topmenu.php'; ?>
    </header> 
