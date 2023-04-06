@@ -44,7 +44,7 @@ ul {
   width: var(--primary-max-width);
 }
 
-.ma {
+.m-auto {
   margin: auto;
 }
 
@@ -56,8 +56,16 @@ ul {
   margin-right:0;
 }
 
+.mb-4{
+  margin-bottom: 4rem;
+}
+
 .p-1{
   padding:1rem;
+}
+
+.text-center{
+  text-align: center;
 }
 
 .text-align-right{
@@ -75,8 +83,16 @@ ul {
   justify-content: right;
 }
 
+.justify-content-center{
+  justify-content: center;
+}
+
 .align-items-center{
   align-items: center;
+}
+
+.set-overflow-hidden{
+  overflow: hidden;
 }
 
 

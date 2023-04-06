@@ -13,9 +13,12 @@
 </head>
 <body>
    <header>
-        <div class="flex-container">
-            <?php require APPROOT . '/views/components/brandlogo.php'; ?>
-            <?php require APPROOT . '/views/components/socialmedia.php'; ?>
+        <div class="container m-auto">
+            <div class="flex-container">
+                <?php require APPROOT . '/views/components/brandlogo.php'; ?>
+                <?php require APPROOT . '/views/components/socialmedia.php'; ?>
+            </div>
+            <?php require APPROOT . '/views/components/topmenu.php'; ?>
         </div>
-        <?php require APPROOT . '/views/components/topmenu.php'; ?>
+        
    </header> 
