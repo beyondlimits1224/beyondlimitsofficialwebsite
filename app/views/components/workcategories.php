@@ -3,7 +3,7 @@
 
     <div class="container m-auto">
         <h2 class="custom-h2 text-center">Works</h2>
-        <ul class="flex-container justify-content-center mb-4">
+        <ul class="flex-container jcc mb-4">
             <li><a href="#" class="active">All</a></li>
             <li><a href="#">Illustration</a></li>
             <li><a href="#">Desktop Application</a></li>
@@ -20,7 +20,7 @@
     </div>
 </section>
 
-<section class="portfolios">
+<section class="portfolios mb-4 o-h">
     <div class="container m-auto">
         <ul class="flex-container">
             <li class="item"><img src="<?php echo URLROOT; ?>/img/speed-top-evo.jpg" alt="Speed top evo"/></li>

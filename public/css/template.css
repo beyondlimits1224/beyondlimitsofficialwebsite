@@ -56,6 +56,10 @@ ul {
   margin-right:0;
 }
 
+.mb-2{
+  margin-bottom: 2rem;
+}
+
 .mb-4{
   margin-bottom: 4rem;
 }
@@ -68,7 +72,7 @@ ul {
   text-align: center;
 }
 
-.text-align-right{
+.text-right{
   text-align: right;
 }
 
@@ -83,7 +87,7 @@ ul {
   justify-content: right;
 }
 
-.justify-content-center{
+.jcc{
   justify-content: center;
 }
 
@@ -91,8 +95,12 @@ ul {
   align-items: center;
 }
 
-.set-overflow-hidden{
+.o-h{
   overflow: hidden;
+}
+
+.fb-50{
+  flex-basis: 50%;
 }
 
 
@@ -144,6 +152,10 @@ header {
   -moz-transition: background-color 0.5s ease-in;
   -o-transition: background-color 0.5s ease-in;
   -ms-transition: background-color 0.5s ease-in;
+}
+
+.socmed .item:not(:last-child){
+  margin: 0 0.5rem 0 0;
 }
 
 .socmed .item:hover{

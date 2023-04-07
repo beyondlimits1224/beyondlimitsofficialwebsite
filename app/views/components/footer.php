@@ -1,8 +1,8 @@
     <footer>
     <div class="container m-auto text-center">
-        <?php require APPROOT . '/views/components/brandlogo.php'; ?>
-        <?php require APPROOT . '/views/components/socialmedia.php'; ?>
-        <div class="copyright">
+        <div class="mt-2 mb-2"><?php require APPROOT . '/views/components/brandlogo.php'; ?></div>
+        <div class="mt-2 mb-2"><?php require APPROOT . '/views/components/socialmedia.php'; ?></div>
+        <div class="copyright mb-2">
         © 2023 <span>BeyondLimits</span>. All Rights Reserved
         </div>
     </div>

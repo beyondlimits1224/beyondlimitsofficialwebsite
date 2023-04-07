@@ -14,9 +14,9 @@
 <body>
    <header>
         <div class="container m-auto">
-            <div class="flex-container">
-                <?php require APPROOT . '/views/components/brandlogo.php'; ?>
-                <?php require APPROOT . '/views/components/socialmedia.php'; ?>
+            <div class="flex-container align-items-center">
+                <div class="fb-50"><?php require APPROOT . '/views/components/brandlogo.php'; ?></div>
+                <div class="fb-50"><?php require APPROOT . '/views/components/socialmedia.php'; ?></div>
             </div>
             <?php require APPROOT . '/views/components/topmenu.php'; ?>
         </div>
