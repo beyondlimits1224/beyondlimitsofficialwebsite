@@ -16,7 +16,11 @@
         <div class="container m-auto">
             <div class="flex-container align-items-center">
                 <div class="fb-50"><?php require APPROOT . '/views/components/brandlogo.php'; ?></div>
-                <div class="fb-50"><?php require APPROOT . '/views/components/socialmedia.php'; ?></div>
+                <div class="fb-50">
+                    <ul class="socmed flex-container jcr">    
+                        <?php require APPROOT . '/views/components/socialmedia.php'; ?>
+                    </ul>
+                </div>
             </div>
             <?php require APPROOT . '/views/components/topmenu.php'; ?>
         </div>

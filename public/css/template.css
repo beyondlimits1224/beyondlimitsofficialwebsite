@@ -1,4 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;1,100;1,300;1,400;1,500&display=swap");
+@import url("variables.css");
+@import url("global.css");
 
 *,
 *::before,
@@ -7,116 +9,6 @@
   padding: 0;
   box-sizing: border-box;
 }
-
-:root {
-  --primary-font-family: "Roboto", sans-serif;
-  --primary-font-size: 16px;
-  --primary-max-width: min(1920px, 100%);
-  --primary-color: #ff3b00;
-  --secondary-color: #000000;
-  --tertiary-color: #ffffff;
-  --quaternary-color: #959595;
-  --quinary-color: #111111;
-}
-
-
-a{
-  text-decoration: none;
-}
-
-ul {
-  list-style-type: none;
-}
-
-.flex-container {
-  display: flex;
-}
-
-.flx-basis-80p{
-  flex-basis: 80%;
-}
-
-.flx-basis-20p{
-  flex-basis:20%;
-}
-
-.container{
-  width: var(--primary-max-width);
-}
-
-.m-auto {
-  margin: auto;
-}
-
-.mt-2{
-  margin-top: 2rem;
-}
-
-.mr-0{
-  margin-right:0;
-}
-
-.mb-2{
-  margin-bottom: 2rem;
-}
-
-.mb-4{
-  margin-bottom: 4rem;
-}
-
-.p-1{
-  padding:1rem;
-}
-
-.text-center{
-  text-align: center;
-}
-
-.text-right{
-  text-align: right;
-}
-
-.custom-h2{
-  color:var(--primary-color);
-  font-size: 4rem;
-  text-transform: uppercase;
-  font-weight: 900;
-}
-
-.justify-content-right{
-  justify-content: right;
-}
-
-.jcc{
-  justify-content: center;
-}
-
-.align-items-center{
-  align-items: center;
-}
-
-.o-h{
-  overflow: hidden;
-}
-
-.fb-50{
-  flex-basis: 50%;
-}
-
-
-.debug-red{
-  background-color: red;
-}
-
-.debug-blue{
-  background-color: blue;
-}
-
-.debug-yellow{
-  background-color: yellow;
-}
-
-
 
 html {
   font-family: var(--primary-font-family);
@@ -176,6 +68,25 @@ header {
 .topmenu{
   text-transform: uppercase;
 }
+
+.topmenu li:not(:last-child){
+  margin: 0 0.5rem 0 0;
+}
+
+.topmenu .item a{
+  color: var(--quaternary-color);
+  transition: color 0.5s ease-in;
+  -webkit-transition: color 0.5s ease-in;
+  -moz-transition: color 0.5s ease-in;
+  -o-transition: color 0.5s ease-in;
+  -ms-transition: color 0.5s ease-in;
+}
+
+.topmenu .item a:hover{
+  color:var(--tertiary-color);
+}
+
+
 
 
 main{
