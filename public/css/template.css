@@ -22,6 +22,11 @@ body {
   background-color: var(--secondary-color);
 }
 
+
+h1{
+  font-size: 3rem;
+}
+
 header {
   position: relative;
   overflow: hidden;
@@ -94,9 +99,17 @@ main{
 }
 
 
+.hero .slide-1{
+  background-image: url('../img/hero-bg.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size:cover;
+}
+
 .hero .row-left h1, .hero .row-left h2{
   text-transform: uppercase;
 }
+
 
 .btn{
   background-color: var(--primary-color);
@@ -139,6 +152,15 @@ main{
 
 .categories a{
   color: var(--quaternary-color);
+  transition: color 0.5s ease-in;
+  -webkit-transition: color 0.5s ease-in;
+  -moz-transition: color 0.5s ease-in;
+  -o-transition: color 0.5s ease-in;
+  -ms-transition: color 0.5s ease-in;
+}
+
+.categories a:hover{
+  color: var(--tertiary-color);
 }
 
 .categories a.active{

@@ -1,11 +1,11 @@
 <section class="hero">
     <div class="slide-1">
         <div class="container m-auto">
-            <div class="flex-container">
+            <div class="flex-container jcc align-items-center">
                 <div class="row-left">
                     <h1>Lebron James</h1>
-                    <h2>Illustration Design</h2>
-                    <a class="btn" href="#">
+                    <h2 class="f-w">Illustration Design</h2>
+                    <a class="btn mt-2" href="#">
                         <div class="flex-container">
                             <img class="btn-icon" src="<?php echo URLROOT;?>/svg/readmore-icon.svg" alt="read more"/>
                             <span>View More</span>
