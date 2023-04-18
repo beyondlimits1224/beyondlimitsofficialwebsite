@@ -13,7 +13,7 @@
 </head>
 <body>
    <header>
-        <div class="container m-auto">
+        <div class="container m-auto p-2">
             <div class="flex-container align-items-center">
                 <div class="fb-50"><?php require APPROOT . '/views/components/brandlogo.php'; ?></div>
                 <div class="fb-50">

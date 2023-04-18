@@ -46,6 +46,10 @@ a{
     padding:1rem;
   }
 
+  .p-2{
+    padding:2rem;
+  }
+
   .f-w{
     font-weight: 100;
   }
