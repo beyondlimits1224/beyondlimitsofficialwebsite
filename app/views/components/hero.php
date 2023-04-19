@@ -1,5 +1,17 @@
+<?php 
+    $bg_slide_img = "hero-bg2.jpg";
+?>
+
+<?php 
+        echo "<style>
+                .hero .slide{
+                    background-image:" . "url" . "('." . "/" . "img" . "/" . $bg_slide_img . "');" . "}";
+        echo   "</style>";
+    ?>
+
 <section class="hero">
-    <div class="slide-1">
+
+    <div class="slide">
         <div class="container m-auto">
             <div class="flex-container jcc align-items-center">
                 <div class="row-left">

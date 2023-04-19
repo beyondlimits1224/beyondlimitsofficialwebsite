@@ -28,9 +28,10 @@ h1{
 }
 
 header {
-  position: relative;
+  position: absolute;
   overflow: hidden;
   background-color: rgba(0, 0, 0, 0);
+  width: 100%;
 }
 
 .logo{
@@ -100,8 +101,8 @@ main{
 }
 
 
-.hero .slide-1{
-  background-image: url('../img/hero-bg2.jpg');
+.hero .slide{
+  /* background-image: url('../img/hero-bg2.jpg'); */
   background-repeat: no-repeat;
   background-position: center;
   background-size:cover;
